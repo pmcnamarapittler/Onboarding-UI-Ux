@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		66BEE8392E79C4CE00E7046E /* splashBackground.mov in Resources */ = {isa = PBXBuildFile; fileRef = 66BEE8382E79C4CE00E7046E /* splashBackground.mov */; };
+		66BEE83E2E79C9F800E7046E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 66BEE83D2E79C9F800E7046E /* Lottie */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		66BEE81C2E79B00A00E7046E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -23,10 +28,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		66BEE8422E79CC6200E7046E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		66BEE80E2E79B00900E7046E /* JotItDownApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JotItDownApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66BEE81B2E79B00A00E7046E /* JotItDownAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JotItDownAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66BEE8252E79B00A00E7046E /* JotItDownAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JotItDownAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66BEE8382E79C4CE00E7046E /* splashBackground.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = splashBackground.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66BEE83E2E79C9F800E7046E /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +98,7 @@
 				66BEE8102E79B00900E7046E /* JotItDownApp */,
 				66BEE81E2E79B00A00E7046E /* JotItDownAppTests */,
 				66BEE8282E79B00A00E7046E /* JotItDownAppUITests */,
+				66BEE8382E79C4CE00E7046E /* splashBackground.mov */,
 				66BEE80F2E79B00900E7046E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +123,7 @@
 				66BEE80A2E79B00900E7046E /* Sources */,
 				66BEE80B2E79B00900E7046E /* Frameworks */,
 				66BEE80C2E79B00900E7046E /* Resources */,
+				66BEE8422E79CC6200E7046E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -112,6 +134,7 @@
 			);
 			name = JotItDownApp;
 			packageProductDependencies = (
+				66BEE83D2E79C9F800E7046E /* Lottie */,
 			);
 			productName = JotItDownApp;
 			productReference = 66BEE80E2E79B00900E7046E /* JotItDownApp.app */;
@@ -195,6 +218,9 @@
 			);
 			mainGroup = 66BEE8052E79B00900E7046E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				66BEE83C2E79C90E00E7046E /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 66BEE80F2E79B00900E7046E /* Products */;
 			projectDirPath = "";
@@ -212,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66BEE8392E79C4CE00E7046E /* splashBackground.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +585,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		66BEE83C2E79C90E00E7046E /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		66BEE83D2E79C9F800E7046E /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66BEE83C2E79C90E00E7046E /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 66BEE8062E79B00900E7046E /* Project object */;
 }
