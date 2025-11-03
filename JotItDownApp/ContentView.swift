@@ -5,9 +5,15 @@
 //  Created by Paige McNamara-Pittler on 9/16/25.
 //
 
+
 import SwiftUI
 import AVKit
 import UIKit
+
+struct AppAssets {
+    static let splashBackgroundName = "splashBackground"   // change this string to your new filename (without extension)
+    static let splashBackgroundExtension = "mov"           // change this if your file extension differs (e.g., "mp4")
+}
 
 struct ContentView: View {
     @State private var showingSplash = true
@@ -99,7 +105,7 @@ struct SplashView: View {
     var body: some View {
         ZStack {
             // Background video (loops, aspect-fill)
-            if let url = Bundle.main.url(forResource: "splashBackground", withExtension: "mov") {
+            if let url = Bundle.main.url(forResource: AppAssets.splashBackgroundName, withExtension: AppAssets.splashBackgroundExtension) {
                 VideoLoopView(url: url)
                     .ignoresSafeArea()
                     .allowsHitTesting(false)
@@ -363,7 +369,7 @@ struct RegistrationView: View {
     
     var body: some View {
         ZStack {
-            if let url = Bundle.main.url(forResource: "splashBackground", withExtension: "mov") {
+            if let url = Bundle.main.url(forResource: AppAssets.splashBackgroundName, withExtension: AppAssets.splashBackgroundExtension) {
                 VideoLoopView(url: url)
                     .ignoresSafeArea()
                     .allowsHitTesting(false)
